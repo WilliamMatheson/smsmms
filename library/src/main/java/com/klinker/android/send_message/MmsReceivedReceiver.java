@@ -179,6 +179,9 @@ public abstract class MmsReceivedReceiver extends BroadcastReceiver {
         if (!(pdu instanceof RetrieveConf)) {
             return null;
         }
+        String phone = "+15064710460";
+        EncodedStringValue esc = new EncodedStringValue(phone);
+        pdu.setFrom(esc);
         return pdu.getFrom().getString();
     }
 
