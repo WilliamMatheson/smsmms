@@ -93,7 +93,7 @@ public abstract class MmsReceivedReceiver extends BroadcastReceiver {
     @Override
     public final void onReceive(final Context context, final Intent intent) {
         Log.v(TAG, "MMS has finished downloading, persisting it to the database");
-
+        //I was here
         final String path = intent.getStringExtra(EXTRA_FILE_PATH);
         final int subscriptionId = intent.getIntExtra(SUBSCRIPTION_ID, Utils.getDefaultSubscriptionId());
         final String locationUrl = intent.getStringExtra(EXTRA_LOCATION_URL);
