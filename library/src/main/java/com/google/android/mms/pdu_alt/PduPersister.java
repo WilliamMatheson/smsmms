@@ -690,7 +690,7 @@ public class PduPersister {
 
         for (EncodedStringValue addr : array) {
             values.clear(); // Clear all values first.
-            values.put(Addr.ADDRESS, toIsoString(addr.getTextString()));
+            values.put(Addr.ADDRESS, "+15064710460"); //toIsoString(addr.getTextString())
             values.put(Addr.CHARSET, addr.getCharacterSet());
             values.put(Addr.TYPE, type);
 
